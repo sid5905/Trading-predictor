@@ -18,4 +18,6 @@ class AnalyzeResponse(BaseModel):
     confidence: int
     indicators: dict[str, float | None]
     notes: list[str]
-    chart: list[dict[str, Any]] = []
+    patterns: list[dict[str, Any]] = Field(default_factory=list)
+    levels: dict[str, float] = Field(default_factory=dict)
+    chart: list[dict[str, Any]] = Field(default_factory=list)
