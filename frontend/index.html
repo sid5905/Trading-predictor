@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trading Predictor</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header><div><span class="eyebrow">AURA TRADING INTELLIGENCE</span><h1>Trading Predictor</h1><p>Technical market analysis workspace</p></div><span class="status">● DEMO MODE</span></header>
+    <section class="search"><input id="symbol" value="RELIANCE" placeholder="Enter stock symbol" /><button id="analyze">Analyze</button></section>
+    <section id="error" class="error hidden"></section>
+    <section id="dashboard" class="hidden">
+      <div class="hero card"><div><span class="label">PRICE</span><strong id="price">—</strong><span id="change">—</span></div><div class="signal" id="signal">—</div></div>
+      <div class="grid">
+        <div class="card"><span class="label">TREND</span><b id="trend">—</b></div><div class="card"><span class="label">MOMENTUM</span><b id="momentum">—</b></div><div class="card"><span class="label">VOLATILITY</span><b id="volatility">—</b></div><div class="card"><span class="label">CONFIDENCE</span><b id="confidence">—</b></div>
+      </div>
+      <div class="card"><h2>Indicators</h2><div class="indicators" id="indicators"></div></div>
+      <div class="card"><h2>Analysis notes</h2><ul id="notes"></ul></div>
+    </section>
+    <footer>Analysis is informational only — not financial advice or an order-execution system.</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
