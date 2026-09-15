@@ -1,35 +1,12 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional Indian stock market technical analysis workspace." />
-  <title>AURA Trading Intelligence</title>
-  <link rel="stylesheet" href="/static/style.css" />
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="AURA Trading Intelligence — professional Indian market research workspace."><title>AURA Trading Intelligence</title><link rel="stylesheet" href="/static/style.css"></head>
 <body>
-  <aside class="sidebar">
-    <div class="brand"><div class="logo">A</div><div><b>AURA</b><small>TRADING INTELLIGENCE</small></div></div>
-    <nav><a class="active" href="#dashboard">Overview</a><a href="#chart">Market Chart</a><a href="#signals">Signals</a><a href="#indicators">Indicators</a></nav>
-    <div class="side-bottom"><span>MARKET STATUS</span><b><i></i> Analysis Engine Online</b><small>v1.0 · Demo data</small></div>
-  </aside>
-  <main class="main" id="dashboard">
-    <header class="topbar"><div><span class="eyebrow">MARKET ANALYSIS</span><h1>Trading Predictor</h1><p>Research, technical signals and market context in one workspace.</p></div><div class="top-actions"><span class="market-pill"><i></i> Market research</span><button class="icon-btn" title="Settings">⚙</button></div></header>
-    <section class="searchbar"><div class="search-icon">⌕</div><input id="symbol" value="RELIANCE" placeholder="Search NSE symbol…" autocomplete="off" /><button id="analyze">Analyze stock <span>→</span></button></section>
-    <section id="error" class="error hidden"></section>
-    <section id="dashboard-content" class="hidden">
-      <div class="stock-head"><div><div class="symbol-row"><h2 id="stock-symbol">RELIANCE</h2><span>NSE</span></div><p>Technical overview · 180 trading sessions</p></div><div class="quote"><strong id="price">—</strong><span id="change">—</span></div></div>
-      <div class="metrics"><div class="metric"><span>Trend</span><b id="trend">—</b><small>Price structure</small></div><div class="metric"><span>Momentum</span><b id="momentum">—</b><small>RSI + MACD</small></div><div class="metric"><span>Volatility</span><b id="volatility">—</b><small>ATR profile</small></div><div class="metric"><span>Signal confidence</span><b id="confidence">—</b><div class="progress"><i id="confidence-bar"></i></div></div></div>
-      <div class="content-grid">
-        <section class="panel chart-panel" id="chart"><div class="panel-head"><div><h3>Price action</h3><p>Daily OHLC · latest 120 sessions</p></div><div class="legend"><span><i></i>Price</span><span><i></i>20D SMA</span></div></div><div id="chart-wrap"><canvas id="price-chart"></canvas></div></section>
-        <section class="panel signal-panel" id="signals"><div class="panel-head"><div><h3>AURA signal</h3><p>Rule-based technical synthesis</p></div></div><div class="signal-box"><span>Current stance</span><strong id="signal">—</strong><div class="signal-meter"><i id="signal-meter"></i></div><p id="signal-copy">Waiting for analysis.</p></div><div class="risk-note"><b>Risk context</b><span>Signals are analytical indicators, not guaranteed outcomes. Confirm market conditions before making decisions.</span></div></section>
-      </div>
-      <section class="panel" id="indicators"><div class="panel-head"><div><h3>Technical indicators</h3><p>Calculated from the selected symbol's price history</p></div></div><div class="indicator-grid" id="indicator-list"></div></section>
-      <section class="panel notes-panel"><div class="panel-head"><div><h3>Market observations</h3><p>What the current technical setup is telling us</p></div></div><ul id="notes"></ul></section>
-    </section>
-    <section id="empty" class="empty"><div class="empty-icon">⌁</div><h2>Start your market analysis</h2><p>Enter an NSE symbol above to generate a structured technical view.</p></section>
-    <footer><span>AURA Trading Intelligence</span><span>For research and educational use only · Not financial advice</span></footer>
-  </main>
-  <script src="/static/app.js"></script>
-</body>
-</html>
+<aside class="sidebar"><div class="brand"><div class="logo">A</div><div><b>AURA</b><small>TRADING INTELLIGENCE</small></div></div><nav><a class="active" href="#dashboard">Overview</a><a href="#chart">Market Analysis</a><a href="#signals">Signals</a><a href="#indicators">Indicators</a><a href="#about">About</a></nav><div class="side-bottom"><span>MARKET STATUS</span><b><i></i> Analysis engine online</b><small>v1.0 · Demo data</small></div></aside>
+<main class="main" id="dashboard"><header class="topbar"><div><span class="eyebrow">INDIAN MARKET ANALYTICS</span><h1>Market Overview</h1><p>Research, analyze and understand price action.</p></div><div class="top-actions"><span class="market-pill"><i></i> DEMO DATA</span><button class="icon-btn" title="Settings">⚙</button></div></header>
+<section class="searchbar"><div class="search-icon">⌕</div><input id="symbol" value="RELIANCE" placeholder="Search NSE symbol — RELIANCE, TCS, INFY…" autocomplete="off"><button id="analyze">Analyze stock <span>→</span></button></section><div id="error" class="error hidden"></div>
+<section id="dashboard-content" class="hidden"><div class="stock-head"><div><div class="symbol-row"><h2 id="stock-symbol">RELIANCE</h2><span>NSE</span></div><p>Technical overview · 180 trading sessions</p></div><div class="quote"><strong id="price">—</strong><span id="change">—</span></div></div>
+<div class="metrics"><div class="metric"><span>Trend</span><b id="trend">—</b><small>Price structure</small></div><div class="metric"><span>Momentum</span><b id="momentum">—</b><small>RSI + MACD</small></div><div class="metric"><span>Volatility</span><b id="volatility">—</b><small>ATR profile</small></div><div class="metric"><span>Signal confidence</span><b id="confidence">—</b><div class="progress"><i id="confidence-bar"></i></div></div></div>
+<div class="content-grid"><section class="panel chart-panel" id="chart"><div class="panel-head"><div><h3>Price action</h3><p>Daily OHLC · latest 120 sessions</p></div><div class="legend"><span><i></i>Price</span><span><i></i>20D SMA</span></div></div><div id="chart-wrap"><canvas id="price-chart"></canvas></div></section><section class="panel signal-panel" id="signals"><div class="panel-head"><div><h3>AURA signal</h3><p>Technical synthesis</p></div></div><div class="signal-box"><span>Current stance</span><strong id="signal">—</strong><div class="signal-meter"><i id="signal-meter"></i></div><p id="signal-copy">Waiting for analysis.</p></div><div class="risk-note"><b>Risk context</b><span>Signals are analytical indicators, not guaranteed outcomes. Confirm market conditions before making decisions.</span></div></section></div>
+<section class="panel" id="indicators"><div class="panel-head"><div><h3>Technical indicators</h3><p>Calculated from the selected symbol's price history</p></div></div><div class="indicator-grid" id="indicator-list"></div></section><section class="panel notes-panel"><div class="panel-head"><div><h3>Market observations</h3><p>What the current technical setup is telling us</p></div></div><ul id="notes"></ul></section></section>
+<section id="empty" class="empty"><div class="empty-icon">⌁</div><h2>Start your market analysis</h2><p>Enter an NSE symbol above to generate a structured technical view.</p></section><footer id="about"><span>AURA Trading Intelligence</span><span>For research and educational use only · Not financial advice</span></footer></main><script src="/static/app.js"></script></body></html>
