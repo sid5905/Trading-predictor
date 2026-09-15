@@ -1,3 +1,4 @@
+from typing import Any
 from pydantic import BaseModel, Field
 
 
@@ -17,3 +18,4 @@ class AnalyzeResponse(BaseModel):
     confidence: int
     indicators: dict[str, float | None]
     notes: list[str]
+    chart: list[dict[str, Any]] = []
